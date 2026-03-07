@@ -1,0 +1,194 @@
+<<<<<<< HEAD
+
+.search-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px; /* максимальная ширина на больших экранах */
+}
+
+.search-wrapper input {
+  width: 100%; 
+  min-width: 100px; 
+=======
+/* ✅ FIX: was display:inline-block which caused width:100% to expand in flex context.
+   Use explicit max-width and let flex handle sizing. */
+.search-wrapper {
+  position: relative;
+  /* Remove width:100% — let max-width control the size inside a flex row */
+  max-width: 280px;
+  width: 280px;
+  flex-shrink: 1; /* ✅ FIX: allow it to shrink when there's not enough space */
+}
+
+.search-wrapper input {
+  width: 100%;
+>>>>>>> temp_branch
+  padding: 7px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+<<<<<<< HEAD
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  width: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+=======
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+  /* ✅ FIX: use a subtle border instead of solid white background
+     so it fits the dark navbar aesthetic */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+
+.search-wrapper input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-wrapper input:focus {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.6);
+>>>>>>> temp_branch
+}
+
+.search-dropdown {
+  position: absolute;
+<<<<<<< HEAD
+  top: 100%;
+  left: 0;
+  width: 100%; 
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+  padding: 10px 0;
+=======
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  max-height: 380px;
+  overflow-y: auto;
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  padding: 6px 0;
+>>>>>>> temp_branch
+  z-index: 9999;
+}
+
+.search-item {
+  padding: 10px 14px;
+  color: #ddd;
+  font-size: 14px;
+  border-bottom: 1px solid #2a2a2a;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.search-item:last-child {
+  border-bottom: none;
+}
+
+.search-item:hover {
+  background: #202020;
+<<<<<<< HEAD
+}
+
+
+@media (max-width: 1024px) {
+  .search-wrapper {
+    max-width: 220px;
+=======
+  color: #fff;
+}
+
+/* ── 1024px ── */
+@media (max-width: 1024px) {
+  .search-wrapper {
+    max-width: 200px;
+    width: 200px;
+>>>>>>> temp_branch
+  }
+  .search-wrapper input {
+    font-size: 13px;
+  }
+}
+
+<<<<<<< HEAD
+@media (max-width: 820px) {
+  .search-wrapper {
+    max-width: 150px;
+=======
+/* ── 820px ── */
+@media (max-width: 820px) {
+  .search-wrapper {
+    max-width: 160px;
+    width: 160px;
+>>>>>>> temp_branch
+  }
+  .search-wrapper input {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+  .search-dropdown {
+<<<<<<< HEAD
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-wrapper {
+    max-width: 120px;
+  }
+  .search-wrapper input {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+  .search-dropdown {
+    max-width: 120px;
+=======
+    min-width: 240px; /* ✅ FIX: dropdown can be wider than the input on mobile */
+  }
+}
+
+/* ── 600px ── */
+@media (max-width: 600px) {
+  .search-wrapper {
+    max-width: 130px;
+    width: 130px;
+  }
+  .search-wrapper input {
+    padding: 5px 7px;
+  }
+}
+
+/* ── 480px ── */
+@media (max-width: 480px) {
+  .search-wrapper {
+    max-width: 100px;
+    width: 100px;
+  }
+  .search-wrapper input {
+    font-size: 11px;
+    padding: 5px 6px;
+  }
+  .search-dropdown {
+    /* ✅ FIX: anchor dropdown to right edge so it doesn't go off-screen */
+    left: auto;
+    right: 0;
+    min-width: 220px;
+>>>>>>> temp_branch
+  }
+}

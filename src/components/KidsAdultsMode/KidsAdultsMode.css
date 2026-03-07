@@ -1,0 +1,58 @@
+<<<<<<< HEAD
+.navbar-modes i{
+  font-size: 32px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: #fff;
+}
+
+.navbar-modes i:hover{
+  color: #818181;
+}
+
+@media (max-width: 820px){
+  .navbar-modes i{
+    font-size: 24px;
+  }
+}
+=======
+.navbar-modes {
+  /* ✅ FIX: flex-shrink:0 so icon is never squished */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-modes i {
+  font-size: 30px;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+  color: #fff;
+  line-height: 1;
+}
+
+.navbar-modes i:hover {
+  color: #b3b3b3;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .navbar-modes i {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 820px) {
+  .navbar-modes i {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-modes i {
+    font-size: 22px;
+  }
+}
+>>>>>>> temp_branch
