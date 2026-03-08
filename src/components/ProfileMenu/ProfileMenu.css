@@ -2,26 +2,6 @@
   position: relative;
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-  gap: 10px;
-  cursor: pointer;
-}
-
-.navbar-profile .avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 4px;
-  background: #fff;
-  object-fit: cover;
-  transition: width 0.3s ease, height 0.3s ease;
-}
-
-.navbar-profile .arrow {
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
-  transition: transform 0.3s ease;
-=======
   gap: 6px;
   cursor: pointer;
   /* ✅ FIX: flex-shrink:0 so profile is never squished out */
@@ -46,7 +26,6 @@
   fill: #ffffff;
   transition: transform 0.3s ease;
   flex-shrink: 0;
->>>>>>> temp_branch
 }
 
 .navbar-profile .arrow.open {
@@ -55,22 +34,6 @@
 
 .navbar-profile .dropdown {
   position: absolute;
-<<<<<<< HEAD
-  top: 56px; 
-  right: 0;
-  background: #191919;
-  padding: 12px 16px;
-  border-radius: 6px;
-  z-index: 3000;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.45);
-}
-
-.navbar-profile .dropdown p {
-  font-size: 13px;
-  padding: 6px 0;
-  cursor: pointer;
-  transition: background 0.2s;
-=======
   top: calc(100% + 10px);
   right: 0;
   background: #191919;
@@ -94,28 +57,10 @@
     background 0.2s,
     color 0.2s;
   white-space: nowrap;
->>>>>>> temp_branch
 }
 
 .navbar-profile .dropdown p:hover {
   background: #282828;
-<<<<<<< HEAD
-}
-
-@media (max-width: 1100px) {
-  .navbar-profile .avatar {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-@media (max-width: 820px) {
-  .navbar-profile .avatar {
-    width: 24px;
-    height: 24px;
-  }
-
-=======
   color: #fff;
 }
 
@@ -124,14 +69,11 @@
     width: 30px;
     height: 30px;
   }
->>>>>>> temp_branch
   .navbar-profile .arrow {
     width: 16px;
     height: 16px;
   }
 }
-<<<<<<< HEAD
-=======
 
 @media (max-width: 820px) {
   .navbar-profile .avatar-icon {
@@ -169,4 +111,3 @@
     padding: 8px 10px;
   }
 }
->>>>>>> temp_branch

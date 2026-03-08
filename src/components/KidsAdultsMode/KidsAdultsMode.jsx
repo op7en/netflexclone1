@@ -2,17 +2,10 @@ import React, { useState } from "react";
 import "./KidsAdultsMode.css";
 
 const KidsAdultsMode = () => {
-<<<<<<< HEAD
-  const [isKids, setIsKids] = useState(true); // по умолчанию детский режим
-
-  const toggleMode = () => {
-    setIsKids(prev => !prev);
-=======
   const [isKids, setIsKids] = useState(true);
 
   const toggleMode = () => {
     setIsKids((prev) => !prev);
->>>>>>> temp_branch
   };
 
   return (

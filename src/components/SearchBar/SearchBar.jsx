@@ -2,10 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SearchBar.css";
 
-<<<<<<< HEAD
-
-=======
->>>>>>> temp_branch
 const TMDB_TOKEN = import.meta.env.VITE_TMDB_TOKEN;
 
 export default function SearchBar() {
@@ -27,11 +23,7 @@ export default function SearchBar() {
             accept: "application/json",
             Authorization: `Bearer ${TMDB_TOKEN}`,
           },
-<<<<<<< HEAD
-        }
-=======
         },
->>>>>>> temp_branch
       );
 
       const json = await res.json();

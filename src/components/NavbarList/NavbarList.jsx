@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-
-import React, { useState } from 'react';
-import './NavbarList.css';
-
-const NavbarList = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="navbar-list-wrapper">
-      <button className="burger-btn" onClick={() => setIsOpen(prev => !prev)}>
-        ☰
-      </button>
-
-      <ul className={`navbar-list ${isOpen ? 'open' : ''}`}>
-=======
 import React, { useState, useRef, useEffect } from "react";
 import "./NavbarList.css";
 
@@ -52,7 +36,6 @@ const NavbarList = () => {
       )}
 
       <ul ref={menuRef} className={`navbar-list ${isOpen ? "open" : ""}`}>
->>>>>>> temp_branch
         <li>Home</li>
         <li>TV Shows</li>
         <li>Movies</li>
