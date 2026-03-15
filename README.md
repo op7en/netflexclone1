@@ -1,49 +1,65 @@
-# Netflix Клон (React)
+# 🎬 Netflix Clone — React
 
-UI-проект, похожий на Netflix, построен с использованием React, Firebase Authentication и TMDB API.  
-Вдохновлён видео-уроком YouTube-канала GreatStack, но с моими доработками: добавлен поисковик и система аутентификации, которая запоминает имя пользователя.
+> Веб-приложение с интерфейсом в стиле Netflix. Авторизация, поиск фильмов и просмотр трейлеров.
 
-## 🔗 Live Demo
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=flat-square)](https://netflexclone-l9i95do1f-olegs-projects-dbc9c07d.vercel.app/)
+[![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)](https://firebase.google.com/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
 
-[Посмотреть проект на Vercel](https://netflexclone-l9i95do1f-olegs-projects-dbc9c07d.vercel.app/)
+---
 
-## ✨ Функционал
+## 📖 О проекте
 
-- Регистрация и вход пользователя (Firebase) с отображением имени
-- Поиск фильмов и сериалов
-- Данные о фильмах через TMDB API
-- Горизонтальная прокрутка рядов с фильмами
-- Адаптивный интерфейс под мобильные и десктоп
-- **Пока доступно только просмотр трейлеров фильмов и сериалов** — большинство англоязычных можно посмотреть, но не всё
+Приложение с интерфейсом в стиле Netflix. Пользователи могут зарегистрироваться, войти в аккаунт, искать фильмы и сериалы через TMDB API и смотреть трейлеры прямо внутри приложения. После авторизации приложение запоминает имя пользователя и отображает его в интерфейсе.
 
-## 🛠 Технологии
+---
 
-- React
-- Firebase Auth
-- TMDB API
-- Vite
+## ✨ Функциональность
+
+- 🔐 Регистрация и вход через Firebase Authentication
+- 👤 Отображение имени пользователя после авторизации
+- 🔍 Поиск фильмов и сериалов в реальном времени
+- 🎥 Просмотр трейлеров внутри приложения
+- 📜 Горизонтальная прокрутка рядов с фильмами
+- 📱 Адаптивный интерфейс для мобильных и десктоп
+
+---
+
+## 🛠️ Технологии
+
+| Технология | Назначение |
+|---|---|
+| **React** | UI и компонентная архитектура |
+| **Firebase Auth** | Регистрация и авторизация пользователей |
+| **TMDB API** | Данные о фильмах и сериалах |
+| **Vite** | Сборка и dev-сервер |
+
+---
 
 ## 📸 Скриншоты
 
-![Главная страница](screens/homepage.png)  
-![Поиск](screens/search.png)  
-![Войти](screens/signin.png)  
-![Выйти](screens/signout.png)  
-![Регистрация](screens/singup.png)  
-![Трейлер фильма](screens/trailer.png)  
+![Главная страница](screens/homepage.png)
+![Поиск](screens/search.png)
+![Войти](screens/signin.png)
+![Регистрация](screens/singup.png)
+![Трейлер фильма](screens/trailer.png)
+
+---
 
 ## ⚠️ Ограничения
 
-- Некоторые фильмы и сериалы могут быть недоступны для просмотра
-- Пока поддерживаются только англоязычные трейлеры
-- Проект на стадии MVP
+- Поддерживаются преимущественно англоязычные трейлеры
+- Часть фильмов может быть недоступна в зависимости от региона
 
-## 🚀 Установка и запуск
+---
+
+## 🚀 Запуск локально
 
 1. Клонируйте репозиторий:
    ```bash
    git clone https://github.com/op7en/netflexclone1.git
-   cd netflexclone1/react-app
+   cd netflexclone1
    ```
 
 2. Установите зависимости:
@@ -51,26 +67,26 @@ UI-проект, похожий на Netflix, построен с использ
    npm install
    ```
 
-3. Создайте `.env` файл на основе `.env.example` и вставьте свои ключи Firebase.
+3. Создайте `.env` файл и добавьте свои ключи:
+   ```
+   VITE_FIREBASE_API_KEY=ваш_ключ
+   VITE_TMDB_API_KEY=ваш_ключ
+   ```
 
-4. Запустите проект в режиме разработки:
+4. Запустите проект:
    ```bash
    npm run dev
    ```
 
-5. Соберите проект для продакшена (опционально):
-   ```bash
-   npm run build
-   ```
+---
 
-## 💡 Источник вдохновения
+## 🌐 Демо
 
-Проект вдохновлён видео-уроком YouTube-канала GreatStack, но реализованные функции и модификации — мои собственные.
+👉 **[https://netflexclone-l9i95do1f-olegs-projects-dbc9c07d.vercel.app/](https://netflexclone-l9i95do1f-olegs-projects-dbc9c07d.vercel.app/)**
 
-[Full Stack Netflix Clone using React JS & Firebase | Build Website Like Netflix in React JS 2024](https://www.youtube.com/watch?v=YQQD67N5pi0&t=4s)
+---
 
-## 📬 Контакты
+## 👤 Автор
 
-- GitHub: [op7en](https://github.com/op7en)
-
-> Проект для портфолио и демонстрации навыков Frontend
+**Oleg Perevalov**
+[GitHub](https://github.com/op7en)
